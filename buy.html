@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>FroExm - Umbrella</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://kit.fontawesome.com/2b24ef39d2.js"></script>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body class="bg-danger">
+    <nav
+      class="navbar fixed-top navbar-expand-lg navbar-light bg-light border-bottom border-danger"
+    >
+      <img src="images/umbrella-logo.jpg" alt="umbrella logo" width="200" />
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav" style="margin-left: 15vw">
+          <li class="nav-item active">
+            <a class="nav-link effect-underline" href="index.html"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link effect-underline" href="products.html"
+              >Products</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link effect-underline" href="magazines.html">
+              News Magazines</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link effect-underline" href="work.html"
+              >How does it work</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link effect-underline" href="about.html">About us</a>
+          </li>
+        </ul>
+      </div>
+      <!--Modal trigger-->
+      <button
+        type="button"
+        class="btn btn-white"
+        data-toggle="modal"
+        data-target="#loginModal"
+      >
+        <i class="fas fa-user"></i>
+      </button>
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="loginModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="loginModalTitle"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="loginModalTitle">
+                Modal title
+              </h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <input
+                class="m-1"
+                type="text"
+                name="username"
+                placeholder="Username"
+              /><br />
+              <input
+                class="m-1"
+                type="password"
+                name="password"
+                placeholder="Password"
+              /><br />
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                Log in
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--End Modal-->
+    </nav>
+    <!--=============================================NAV-SEPARATOR===========================================================-->
+
+    <div class="row mt-5"><div class="col-sm-5"></div></div>
+    <div class="row mt-5"><div class="col-sm-5"></div></div>
+    <div class="row mt-5"><div class="col-sm-5"></div></div>
+    <div class="container border border-danger bg-white mt-5">
+      <div class="row  m-3">
+        <div class="col-sm-8 ">
+          <form action="index.html">
+            <input class="mr-1" type="text" name="name" placeholder="Name" />
+            <input
+              class="mr-1"
+              type="text"
+              name="surename"
+              placeholder="Surename"
+            /><br /><br />
+            <input
+              class="mr-1"
+              type="text"
+              name="city"
+              placeholder="City"
+            /><br /><br />
+            <input
+              class="mr-1"
+              type="text"
+              name="street"
+              placeholder="Street"
+            />
+            <input
+              class="mr-1"
+              type="text"
+              name="housenumber"
+              placeholder="House number"
+            /><br /><br />
+            <input
+              class="mr-1"
+              type="text"
+              name="postalcode"
+              placeholder="Postal Code"
+            /><br />
+            <hr />
+            <p>Payment method:</p>
+
+            <select name="payment" form="carform">
+              <option value="volvo">iDeal</option>
+              <option value="saab">PayPal</option>
+              <option value="opel">Credit Card</option>
+            </select>
+            <br /><br />
+            <button class="btn btn-success" type="submit">Submit</button>
+          </form>
+        </div>
+        <div class="col-sm-4">
+          <img class="d-block w-100" src="images/logo1.png" alt="logo" />
+        </div>
+      </div>
+    </div>
+    <div class="row mt-5"><div class="col-sm-5"></div></div>
+    <div class="row mt-5"><div class="col-sm-5"></div></div>
+    <div class="row mt-5"><div class="col-sm-5"></div></div>
+    <!--=========================================FOOTER-SEPARATOR==========================================-->
+    <footer
+      class="footer border-top border-danger  justify-content-center bg-white"
+    >
+      <div class="container pt-4 pb-4">
+        <div class="row">
+          <div class="col-sm-4 text-muted">
+            made by: AleksanderCzaj@gmail.com
+          </div>
+          <div class="col-sm-4">
+            <i class="fab fa-twitter m-2 bigger thover"></i>
+            <i class="fab fa-google-plus-g m-2 bigger ghover"></i>
+            <i class="fab fa-facebook m-2 bigger fhover"></i>
+          </div>
+          <div class="col-sm-4 text-muted">Contact: info@umbrella.com</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
